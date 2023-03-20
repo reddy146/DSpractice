@@ -76,6 +76,18 @@ public class zero {
 			System.out.println("second maximum : "+smax);
 			
 		}
+		public void m1() {
+			int a[]= new int [2];
+			a[0]=0;
+			a[1]=1;
+			int t;
+			for(int i=0;i<10;i++) {
+				t=a[0]+a[1];
+				a[0]=a[1];
+				a[1]=t;
+				System.out.println(t);
+			}
+		}
 		
 		public static void main(String args[]) {
 			zero z=new zero();
@@ -84,7 +96,8 @@ public class zero {
 		//	z.maxNo();
 		//	z.minNo();
 		//	z.reverse();
-			z.smax();
+		//	z.smax();
+			z.m1();
 			
 	}
 		
