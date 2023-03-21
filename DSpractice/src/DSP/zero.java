@@ -89,6 +89,50 @@ public class zero {
 			}
 		}
 		
+		public void duplicate() {
+			int b[]= {2,3,5,2,5,1,6,4};
+			for(int i=0;i<b.length;i++) {
+				for(int j=i+1;j<b.length;j++) {
+					if(b[i]==b[j]) {
+						System.out.println(b[i]);
+					}
+				}
+			}
+		}
+		public void removeDuplicate() {
+			int a[]= {2,3,5,1,2,5,6,1,4};
+			int k=0;
+			int b[]=new int[a.length+1];	
+			
+			for(int i=0;i<a.length;i++) {
+				for(int j=i+1;j<a.length;j++) {
+					if(a[i]>a[j]) {
+						int t=a[i];
+						a[i]=a[j];
+						a[j]=t;
+					}
+					
+				}
+				System.out.print(a[i]);
+				b[k++]=a[i];
+			}
+			System.out.println();
+			
+			for(int i=0;i<b.length-1;i++) {
+				
+					if(b[i]==b[i+1]) {
+					
+						
+						
+					}else {
+						System.out.println(b[i]);
+					}
+					
+				
+				
+			}
+			
+		}
 		public static void main(String args[]) {
 			zero z=new zero();
 		//	z.elementmovelast();
@@ -97,7 +141,9 @@ public class zero {
 		//	z.minNo();
 		//	z.reverse();
 		//	z.smax();
-			z.m1();
+		//	z.m1();
+		//	z.duplicate();
+			z.removeDuplicate();
 			
 	}
 		
