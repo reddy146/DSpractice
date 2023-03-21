@@ -133,6 +133,28 @@ public class zero {
 			}
 			
 		}
+		public void removeelement() {
+			int d=3;
+			int a[]= {2,1,3,4,5,6};
+			for(int i=0;i<a.length;i++) {
+				if(d==a[i]) {
+					
+				}else {
+					System.out.println(a[i]);
+				}
+			}
+		}
+		public void removeposition() {
+			int d=3;
+			int a[]= {2,1,3,4,5,6};
+			for(int i=0;i<a.length;i++) {
+				if(d==i) {
+					
+				}else {
+					System.out.println(a[i]);
+				}
+			}
+		}
 		public static void main(String args[]) {
 			zero z=new zero();
 		//	z.elementmovelast();
@@ -143,8 +165,9 @@ public class zero {
 		//	z.smax();
 		//	z.m1();
 		//	z.duplicate();
-			z.removeDuplicate();
-			
+		//	z.removeDuplicate();
+		//	z.removeelement();
+			z.removeposition();
 	}
 		
 }
