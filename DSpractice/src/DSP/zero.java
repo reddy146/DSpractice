@@ -155,6 +155,25 @@ public class zero {
 				}
 			}
 		}
+		public void arrayevenodd() {
+			
+			int a[]= {7,8,3,4,5,6};
+			int b[]=new int [a.length/2];
+			int j=0;
+			
+			for(int i=0;i<a.length;i++) {
+				if(a[i]%2==0) {
+					System.out.print(a[i]+" ");
+				}else {
+					
+					b[j++]=a[i];
+				}
+			}
+			System.out.println();
+			for(int k=0;k<b.length;k++) {
+				System.out.print(b[k]+" ");
+			}
+		}
 		public static void main(String args[]) {
 			zero z=new zero();
 		//	z.elementmovelast();
@@ -167,7 +186,8 @@ public class zero {
 		//	z.duplicate();
 		//	z.removeDuplicate();
 		//	z.removeelement();
-			z.removeposition();
+		//	z.removeposition();
+			z.arrayevenodd();
 	}
 		
 }
