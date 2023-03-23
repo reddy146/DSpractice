@@ -82,8 +82,15 @@ public class Strings {
 	public void append() {
 		StringBuffer r=new StringBuffer("ramachandra");
 		r.append(" reddy");
+		System.out.println(r);
+		System.out.println(r.hashCode());
 		r.append(" 146");
 		System.out.println(r);
+		System.out.println(r.hashCode());
+	}
+	public void delete() {
+		StringBuffer r=new StringBuffer("ramchandra");
+		System.out.println(r.delete(3, 6));
 	}
 	public static void main(String args[]) {
 		Strings s=new Strings();
@@ -105,6 +112,7 @@ public class Strings {
 		//  s.replaceall();
 		//  s.insert();
 		//  s.append();
+		//  s.delete();
 	}
 
 }
