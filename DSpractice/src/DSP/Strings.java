@@ -79,6 +79,12 @@ public class Strings {
 		StringBuffer n=r.insert(3, "a");
 		System.out.println(n);
 	}
+	public void append() {
+		StringBuffer r=new StringBuffer("ramachandra");
+		r.append(" reddy");
+		r.append(" 146");
+		System.out.println(r);
+	}
 	public static void main(String args[]) {
 		Strings s=new Strings();
 	    
@@ -98,7 +104,7 @@ public class Strings {
 		//  s.replace();
 		//  s.replaceall();
 		//  s.insert();
-		    
+		//  s.append();
 	}
 
 }
