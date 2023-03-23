@@ -1,6 +1,6 @@
 package DSP;
 
-public class zero {
+public class Array {
 
 	
 		
@@ -76,7 +76,7 @@ public class zero {
 			System.out.println("second maximum : "+smax);
 			
 		}
-		public void m1() {
+		public void fibonacci() {
 			int a[]= new int [2];
 			a[0]=0;
 			a[1]=1;
@@ -174,20 +174,33 @@ public class zero {
 				System.out.print(b[k]+" ");
 			}
 		}
+		public void missing() {
+			int a[]= {3,1,6,4,2};
+			int n=a.length+1;
+			int c=n*(n+1)/2;
+			int miss=0;
+			for(int i=0;i<a.length;i++) {
+				miss=miss+a[i];
+			}
+			int t=c-miss;
+			System.out.println(t);
+		}
+		
 		public static void main(String args[]) {
-			zero z=new zero();
+			Array z=new Array();
 		//	z.elementmovelast();
 		//	z.elementmovefirst();
 		//	z.maxNo();
 		//	z.minNo();
-		//	z.reverse();
 		//	z.smax();
-		//	z.m1();
+		//	z.reverse();
+		//	z.fibonacci();
 		//	z.duplicate();
 		//	z.removeDuplicate();
 		//	z.removeelement();
 		//	z.removeposition();
-			z.arrayevenodd();
+		//	z.arrayevenodd();
+		//	z.missing();
 	}
 		
 }
