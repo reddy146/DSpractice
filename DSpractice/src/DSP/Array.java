@@ -5,6 +5,27 @@ public class Array {
 	
 		
 		int a[]= {5 ,22,55,3,4,};
+		public void sum() {
+			int sum=0;
+			for(int i=0;i<a.length;i++) {
+				sum=sum+a[i];
+			}
+			System.out.println("total sum :"+ sum);
+		}
+		public void sorting() {
+			int t;
+			for(int i=0;i<a.length;i++) {
+				t=0;
+				for(int j=i+1;j<a.length;j++) {
+					if(a[i]>a[j]) {                   //if(a[i]<a[j])decreasing
+						t=a[i];
+						a[i]=a[j];
+						a[j]=t;
+					}
+				}
+				System.out.println(a[i]);
+			}
+		}
 		
 		public void elementmovelast() {
 		int t;
@@ -185,9 +206,40 @@ public class Array {
 			int t=c-miss;
 			System.out.println(t);
 		}
+		public void mergingTwoArrays() {
+			int a[]= {1,3,5,7,9};
+			int b[]= {2,4,6,8};
+			int c[]= new int[a.length+b.length];
+			
+		}
+		public void patternsort() {
+			int n=5;
+			int j;
+			int arr[]= {2,4,6,8,3};
+			
+			for(int i=0;i<n-1;i++) {
+				int k=0;
+				for( j=1;j<n;j++) {
+					if(arr[k] < arr[j]) {
+						System.out.print(arr[k]);
+						k++;
+					}else  {
+						System.out.print(arr[k]);
+						int t=arr[k];
+						arr[k]=arr[j];
+						arr[j]=t;
+						k++;
+					}
+				}
+				System.out.println(arr[k]);
+				System.out.println();
+			}
+		}
 		
 		public static void main(String args[]) {
 			Array z=new Array();
+		//	z.sum();
+		//	z.sorting();
 		//	z.elementmovelast();
 		//	z.elementmovefirst();
 		//	z.maxNo();
@@ -201,6 +253,7 @@ public class Array {
 		//	z.removeposition();
 		//	z.arrayevenodd();
 		//	z.missing();
+		//	z.patternsort();
 	}
 		
 }
